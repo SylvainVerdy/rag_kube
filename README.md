@@ -159,7 +159,7 @@ Détails et exemples dans `env.example`.
 
 | Service | URL type | Rôle |
 |---------|-----------|------|
-| **Langfuse** | http://localhost:3000 | Traces LLM, scores (dont notation utilisateur). |
+| **Langfuse** | http://localhost:3000 | Traces LLM, scores (dont notation utilisateur). Lancé via Docker (projet séparé). |
 | **MLflow** | http://localhost:5000 | Suivi des expériences et métriques d’ingestion. |
 | **Prometheus** | http://localhost:9090 | Métriques (si déployé). |
 | **Grafana** | http://localhost:3001 | Dashboards (si déployé). |

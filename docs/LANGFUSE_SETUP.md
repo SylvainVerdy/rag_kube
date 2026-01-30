@@ -1,5 +1,28 @@
 # Configuration de Langfuse
 
+Langfuse tourne ici **via Docker** (projet séparé, par ex. `langfuse` dans un autre dossier). L’API RAG (rag_kube) se connecte à Langfuse sur `http://localhost:3000`.
+
+## Démarrer / arrêter Langfuse (Docker)
+
+Depuis le dossier du projet Langfuse (ex. `C:\Users\sylva\Documents\projet_perso\langfuse`) :
+
+```powershell
+# Démarrer tous les services (web, worker, postgres, redis, etc.)
+docker compose up -d
+
+# Arrêter
+docker compose stop
+
+# Voir les logs
+docker compose logs -f langfuse-web
+```
+
+Vous pouvez aussi lancer ou arrêter le projet **langfuse** depuis Docker Desktop (bouton Play / Stop sur le projet).
+
+**Interface :** http://localhost:3000 (après démarrage)
+
+---
+
 ## Étape 1 : Vérifier que Langfuse tourne
 
 Assurez-vous que Langfuse est accessible sur http://localhost:3000
