@@ -59,7 +59,9 @@ class EvidentlyMonitor:
         return report.as_dict()
 
 
-evidently_monitor = EvidentlyMonitor()
+evidently_monitor: Optional["EvidentlyMonitor"] = None
+if evidently_available:
+    evidently_monitor = EvidentlyMonitor()
 
 
 def setup_evidently_monitoring():

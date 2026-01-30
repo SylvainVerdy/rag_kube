@@ -42,7 +42,7 @@ New-Item -ItemType Directory -Force -Path chroma_db, data, logs, mlflow | Out-Nu
 
 # Lancer l'API
 Write-Host "🌟 Lancement de l'API..." -ForegroundColor Green
-uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn src.api.main:app --host 0.0.0.0 --port 8001 --reload
 
 
 
